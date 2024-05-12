@@ -5,6 +5,7 @@ Basic Usage Example
 
 Initializing libraries
 --------------------------
+
 .. code-block:: python 
     import pandas as pd 
     
@@ -40,6 +41,7 @@ Loading data
 
 Split dataset 
 --------------------------  
+
 Split the dataset into training, DES (DSEL) validation, and testing.  
 
 .. code-block:: python
@@ -81,6 +83,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
     
     des.fit(X_dsel, y_dsel)  
 
+
 4. Testing
 --------------------------
 
@@ -101,6 +104,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 
 The content of the contribution data frame: 
 -------------------------- 
+
 | Model                  | Predictions | Competence | Weights |
 |------------------------|-------------|------------|---------|
 | XGBRegressor           | 9.133       | 0.064      | 15.609  |
@@ -108,8 +112,10 @@ The content of the contribution data frame:
 | LinearRegression       | 8.913       | 0.090      | 11.141  |
 | KNeighborsRegressor    | 9.000       | 0.072      | 13.846  |
 
+
 The samples in the region of competence (neighbors_df): 
 -------------------------- 
+
 | Sex | Length | Diameter | Height | Whole_weight | Shucked_weight | Viscera_weight | Shell_weight | Target |
 |-----|--------|----------|--------|--------------|----------------|----------------|--------------|--------|
 | 2   | 0.565  | 0.44     | 0.125  | 0.802        | 0.3595         | 0.1825         | 0.215        | 9      |

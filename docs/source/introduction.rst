@@ -2,7 +2,9 @@
 Introduction
 ====================
 
-InfoDESReg is open source library focusing the implementation of the state-of-the-art techniques for dynamic regressor and ensemble selection with late fusion setting. This project is under active development.
+.. note::
+
+  InfoDESReg is open source library focusing the implementation of the state-of-the-art techniques for dynamic regressor and ensemble selection with late fusion setting. This project is under active development.
 
 
 **Features & Uses**

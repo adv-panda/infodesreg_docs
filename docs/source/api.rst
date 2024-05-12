@@ -9,9 +9,7 @@ Dynamic Ensemble Selection (DES)
 
 .. code-block:: python  
 
-  class infodesreg.des.DES(self, pool_classifiers=None, feature_subsets=None, k=7, DFP=False, knn_metric='minkowski',
-                             dimensionality_reduction=False, reduction_technique='pca', n_components = 5, cbr_features = None, 
-                             colors=None) 
+  class infodesreg.des.DES(self, pool_regressors=None, feature_subsets=None, k=7, knn_metric='minkowski') 
                         
 Dynamic Ensemble Selection (DES) is a method for improving the performance of ensemble learning by dynamically selecting a subset of base regressors that are most competent in predicting a given test sample. The selection is based on the performance of each regressor in the region of competence, which is determined using the k-NN algorithm.  
 

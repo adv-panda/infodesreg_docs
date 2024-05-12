@@ -73,13 +73,13 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 --------------------------
 
 .. code-block:: python
-des = DES(pool_regressors=pool_models, 
-          k=6, 
-          knn_metric='minkowski', 
-          metrics='mape', 
-          threshold=0.1)
-
-des.fit(X_dsel, y_dsel)  
+    des = DES(pool_regressors=pool_models, 
+              k=6, 
+              knn_metric='minkowski', 
+              metrics='mape', 
+              threshold=0.1)
+    
+    des.fit(X_dsel, y_dsel)  
 
 4. Testing
 --------------------------

@@ -4,7 +4,6 @@ Basic Usage Example
 
 
 **Initializing libraries**
---------------------------
 
 .. code-block:: python 
 
@@ -28,8 +27,7 @@ Basic Usage Example
     from infodesreg import DES
 
 
-Loading data
--------------------------- 
+**Loading data** 
 
 .. code-block:: python
 
@@ -41,8 +39,7 @@ Loading data
     X['Sex'] = le.fit_transform(X['Sex'])  
 
 
-Split dataset 
---------------------------  
+**Split dataset**
 
 Split the dataset into training, DES (DSEL) validation, and testing.  
 
@@ -54,8 +51,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
     X_train, X_dsel, y_train, y_dsel = train_test_split(X_train, y_train, test_size=0.2, random_state=42)   
 
 
-1. Models pool generation
---------------------------  
+1. Models pool generation  
 
 .. code-block:: python
 
@@ -67,8 +63,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
     ]
     
 
-2. Train the models (pool): 
--------------------------- 
+2. Train the models (pool):  
 
 .. code-block:: python
 
@@ -77,7 +72,6 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 
 
 3. Usage of our library:
---------------------------
 
 .. code-block:: python
 
@@ -91,7 +85,6 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 
 
 4. Testing
---------------------------
 
 .. code-block:: python
 
@@ -111,8 +104,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 
 
 The content of the contribution data frame: 
--------------------------- 
-
+ 
 +------------------------+-------------+------------+---------+
 | Model                  | Predictions | Competence | Weights |
 +========================+=============+============+=========+
@@ -126,8 +118,7 @@ The content of the contribution data frame:
 +------------------------+-------------+------------+---------+
 
 
-The samples in the region of competence (neighbors_df): 
--------------------------- 
+The samples in the region of competence (neighbors_df):  
 
 +-----+--------+----------+--------+--------------+----------------+----------------+--------------+--------+
 | Sex | Length | Diameter | Height | Whole_weight | Shucked_weight | Viscera_weight | Shell_weight | Target |

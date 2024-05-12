@@ -3,7 +3,7 @@ Basic Usage Example
 ========================
 
 
-Initializing libraries
+**Initializing libraries**
 --------------------------
 
 .. code-block:: python 

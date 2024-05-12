@@ -7,6 +7,7 @@ Basic Usage Example
 --------------------------
 
 .. code-block:: python 
+
     import pandas as pd 
     
     # models 
@@ -31,6 +32,7 @@ Loading data
 -------------------------- 
 
 .. code-block:: python
+
     abalone = fetch_ucirepo(id=1) 
     X = abalone.data.features 
     y = abalone.data.targets  
@@ -45,6 +47,7 @@ Split dataset
 Split the dataset into training, DES (DSEL) validation, and testing.  
 
 .. code-block:: python
+
     TEST_SIZE = 0.2 
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=42) 
@@ -55,6 +58,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 --------------------------  
 
 .. code-block:: python
+
     pool_models = [
         XGBRegressor(random_state=42), 
         RandomForestRegressor(random_state=42), 
@@ -67,6 +71,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 -------------------------- 
 
 .. code-block:: python
+
     for model in pool_models: 
         model.fit(X_train, y_train)  
 
@@ -75,6 +80,7 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 --------------------------
 
 .. code-block:: python
+
     des = DES(pool_regressors=pool_models, 
               k=6, 
               knn_metric='minkowski', 
@@ -88,12 +94,14 @@ Split the dataset into training, DES (DSEL) validation, and testing.
 --------------------------
 
 .. code-block:: python
+
     des.score(X_test, y_test) # based on MSE 
 
 
 5. Explainability 
 
 .. code-block:: python 
+
     index = 47
     X_test.iloc[index]
     

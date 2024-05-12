@@ -13,6 +13,7 @@ Contents
 .. toctree::
 
    usage
+   introduction
    api
    example
 
